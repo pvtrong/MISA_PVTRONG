@@ -107,11 +107,11 @@ function render(response){
                     <td rowspan="1" colspan="1" style="width: 119px;"><div class="cell">${response[i].phoneNumber}</div></td>
                     <td rowspan="1" colspan="1" style="width: 192px;"><div class="cell">${response[i].email}</div></td>
                     <td rowspan="1" colspan="1" style="width: 232px;"><div class="cell">${positionName}</div></td>
-                    <td rowspan="1" colspan="1" style="width: 72px;"><div class="cell">${departmentName}</div></td>
+                    <td rowspan="1" colspan="1" style="width: 172px;"><div class="cell">${departmentName}</div></td>
                     
                     
-                    <td rowspan="1" colspan="1"  style="width:100px;"><div class="cell">${formatCurrency(response[i].salary)}</div></td>
-                    <td rowspan="1" colspan="1" style="width: 98px;"><div class="cell">${formatStatus(response[i].status)}</div></td>
+                    <td rowspan="1" colspan="1"  style="width:200px;"><div class="cell">${formatCurrency(response[i].salary)}</div></td>
+                    <td rowspan="1" colspan="1" style="width: 198px;"><div class="cell">${formatStatus(response[i].status)}</div></td>
                 </tr>`; 
         $('#tbListData >tbody:last-child').append(trHtml);
         
