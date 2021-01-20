@@ -34,7 +34,7 @@
         cursor: pointer;
         opacity: .7;
         background-color: #ffffff;
-        background-image: url('/content/icon/x.svg');
+        background-image: url('../../content/icon/x.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: 20px;

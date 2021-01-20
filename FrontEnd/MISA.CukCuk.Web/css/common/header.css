@@ -41,7 +41,7 @@
             height: 30px;
             border: 1px solid #ccc;
             border-radius: 50%;
-            background-image: url('/content/icon/avatar-default.png');
+            background-image: url('../../content/icon/avatar-default.png');
             background-size:contain;
         }
 

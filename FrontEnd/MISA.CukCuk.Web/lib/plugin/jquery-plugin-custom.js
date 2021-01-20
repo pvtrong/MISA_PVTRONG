@@ -278,7 +278,7 @@ class MPlugin {
             $(this).replaceWith(controlHtml);
             $("#" + id + "").datepicker({
                 showOn: "button",
-                buttonImage: "/content/icon/date-picker.svg",
+                buttonImage: "../content/icon/date-picker.svg",
                 buttonImageOnly: true,
                 buttonText: "Chọn ngày",
                 dateFormat: "dd/mm/yy"

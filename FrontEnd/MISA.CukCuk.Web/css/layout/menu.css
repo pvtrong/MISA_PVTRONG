@@ -17,14 +17,14 @@
         .menu .logo .icon-bar {
             width: 30px;
             height: 30px;
-            background-image: url('/content/img/toggle.png');
+            background-image: url('../content/img/toggle.png');
             background-size: contain;
         }
 
         .menu .logo .logo-page {
             width: 130px;
             height: 30px;
-            background-image: url('/content/img/cukcuk-logo.png');
+            background-image: url('../content/img/cukcuk-logo.png');
             background-size: contain;
             background-repeat: no-repeat;
             margin-left: 10px;
@@ -62,9 +62,9 @@
 
 
 .icon__home {
-    background-image: url('/content/icon/dashboard.png');
+    background-image: url('../content/icon/dashboard.png');
 }
 
 .icon__report {
-    background-image: url('/content/icon/dic-employee.png');
+    background-image: url('../content/icon/dic-employee.png');
 }

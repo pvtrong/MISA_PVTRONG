@@ -46,7 +46,7 @@
     }
 
 .m-btn-refresh {
-    background-image: url('/content/icon/refresh.png');
+    background-image: url('../../content/icon/refresh.png');
     background-repeat: no-repeat;
     width: 40px;
     background-position: center;
@@ -98,18 +98,18 @@
     }
 
     .m-btn-firstpage {
-        background-image: url('/content/icon/btn-firstpage.svg');
+        background-image: url('../../content/icon/btn-firstpage.svg');
     }
 
 .m-btn-prev-page {
-    background-image: url('/content/icon/btn-prev-page.svg');
+    background-image: url('../../content/icon/btn-prev-page.svg');
 }
 
 .m-btn-next-page {
-    background-image: url('/content/icon/btn-next-page.svg');
+    background-image: url('../../content/icon/btn-next-page.svg');
 }
 
 .m-btn-lastpage {
-    background-image: url('/content/icon/btn-lastpage.svg');
+    background-image: url('../../content/icon/btn-lastpage.svg');
 }
 
