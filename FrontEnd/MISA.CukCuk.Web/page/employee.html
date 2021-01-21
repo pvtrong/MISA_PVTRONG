@@ -5,10 +5,11 @@
     <title>MISA CukCuk - Phần mềm quản lý nhà hàng</title>
     <link href="../lib/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" />
     <link href="../lib/jquery.tableScroll/jquery.tablescroll.css" rel="stylesheet" />
-    
+
     <link href="../css/common/main.css" rel="stylesheet" />
     <link href="../css/page/employee.css" rel="stylesheet" />
 </head>
+
 <body>
     <div class="navbar">
         <div class="logo-site">
@@ -73,40 +74,77 @@
         </div>
         <div class="filter-bar">
             <div class="filter-left">
-                <input id="txtSearchEmployee" class="icon-search input-search" type="text" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại" />
-                <select id="cbxDepartment"  class="getDepartments filter" fieldName="CustomerGroupName" fieldValue="CustomerGroupId" api="/api/customergroups"  >
+                <input id="txtSearchEmployee" class="icon-search input-search" type="text"
+                    placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại" />
+                <select id="cbxDepartment" class="getDepartments filter" fieldName="CustomerGroupName"
+                    fieldValue="CustomerGroupId" api="/api/customergroups">
                 </select>
-                <select class="getPositions filter" id="cbxPosition" fieldName="CustomerGroupName" fieldValue="CustomerGroupId" api="/api/customergroups"  >
+                <select class="getPositions filter" id="cbxPosition" fieldName="CustomerGroupName"
+                    fieldValue="CustomerGroupId" api="/api/customergroups">
                 </select>
             </div>
             <div class="filter-right">
-                
+
                 <button id="btnDelete" class="m-second-button m-btn-delete"></button>
                 <button id="btnRefresh" class="m-second-button m-btn-refresh">
                 </button>
             </div>
         </div>
-        <div class="grid grid-employee el-table el-table--fit el-table--scrollable-y el-table--enable-row-hover el-table--enable-row-transition">
-            <table id="tbListData" cellspacing="0" cellpadding="0" border="0" class="el-table__body" style="min-width: 100%;">
+        <div
+            class="grid grid-employee el-table el-table--fit el-table--scrollable-y el-table--enable-row-hover el-table--enable-row-transition">
+            <table id="tbListData" cellspacing="0" cellpadding="0" border="0" class="el-table__body"
+                style="min-width: 100%;">
                 <thead class="has-gutter">
                     <tr class="el-table__row">
-                        <th colspan="1" rowspan="1" class="el-table_30_column_114 is-leaf" fieldName=""><div class="cell">
-                            <input type="checkbox" class="checkboxIP" id="checkboxIP" name="">
-                        </div></th>
-                        <th colspan="2" rowspan="1" class="el-table_30_column_114 is-leaf" fieldName="EmployeeCode"><div class="cell">Mã nhân viên</div></th>
-                        <th colspan="1" rowspan="1" class="el-table_30_column_115 is-leaf" fieldName="FullName"><div class="cell">Họ và tên</div></th>
-                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="GenderName"><div class="cell">Giới tính</div></th>
-                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="DateOfBirth" formatType="ddmmyyyy"><div class="cell">Ngày sinh</div></th>
-                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="PhoneNumber"><div class="cell">Điện thoại</div></th>
-                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="Email"><div class="cell">Email</div></th>
-                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="PositionName"><div class="cell">Chức vụ</div></th>
-                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="DepartmentName"><div class="cell">Phòng ban</div></th>
-                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="Salary" formatType="Money"><div class="cell" >Mức lương cơ bản</div></th>
-                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="WorkStatusName"><div class="cell">Tình trạng công việc</div></th>
+                        <th colspan="1" rowspan="1" class="el-table_30_column_114 is-leaf" fieldName="">
+                            <div class="cell">
+                                <div class="boxCheck">
+                                    <input type="checkbox" class="checkboxIP" id="checkboxIP" name="">
+                                    <div class="checkmark">
+                                        <div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </th>
+                        <th colspan="2" rowspan="1" class="el-table_30_column_114 is-leaf" fieldName="EmployeeCode">
+                            <div class="cell">Mã nhân viên</div>
+                        </th>
+                        <th colspan="1" rowspan="1" class="el-table_30_column_115 is-leaf" fieldName="FullName">
+                            <div class="cell">Họ và tên</div>
+                        </th>
+                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="GenderName">
+                            <div class="cell">Giới tính</div>
+                        </th>
+                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="DateOfBirth"
+                            formatType="ddmmyyyy">
+                            <div class="cell">Ngày sinh</div>
+                        </th>
+                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="PhoneNumber">
+                            <div class="cell">Điện thoại</div>
+                        </th>
+                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="Email">
+                            <div class="cell">Email</div>
+                        </th>
+                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="PositionName">
+                            <div class="cell">Chức vụ</div>
+                        </th>
+                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="DepartmentName">
+                            <div class="cell">Phòng ban</div>
+                        </th>
+                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="Salary"
+                            formatType="Money">
+                            <div class="cell">Mức lương cơ bản</div>
+                        </th>
+                        <th colspan="1" rowspan="1" class="el-table_30_column_116 is-leaf" fieldName="WorkStatusName">
+                            <div class="cell">Tình trạng công việc</div>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
-                    
+
                 </tbody>
             </table>
         </div>
@@ -150,29 +188,26 @@
                         <div class="m-row mg-top-0 m-flex">
                             <div class="m-col m-flex-1">
                                 <div class="m-label">Mã nhân viên (<span class="label-required">*</span>)</div>
-                                <div  ><input id="txtEmployeeCode" name="EmployeeCode" fieldName="EmployeeCode" required type="text" /></div>
+                                <div><input id="txtEmployeeCode" name="EmployeeCode" fieldName="EmployeeCode" required
+                                        type="text" /></div>
                             </div>
                             <div class="m-flex-1 mg-left-10px">
                                 <div class="m-label">Họ và tên (<span class="label-required">*</span>)</div>
-                                <div  >
-                                    <input id="txtFullName" name="FullName" fieldName="FullName" required class="input-required" type="text" required />
+                                <div>
+                                    <input id="txtFullName" name="FullName" fieldName="FullName" required
+                                        class="input-required" type="text" required />
                                 </div>
                             </div>
                         </div>
                         <div class="m-row m-flex">
                             <div class="m-flex-1">
-                                <m-date-picker name="DateOfBirth"
-                                                id="dtDateOfBirth"
-                                               label="Ngày sinh"
-                                               label-cls="m-label"
-                                               input-cls="m-control"
-                                               format="dd/mm/yyyy"
-                                               fieldName=""
-                                               placeholder="_ _/ _ _/ _ _ _ _" />
+                                <m-date-picker name="DateOfBirth" id="dtDateOfBirth" label="Ngày sinh"
+                                    label-cls="m-label" input-cls="m-control" format="dd/mm/yyyy" fieldName=""
+                                    placeholder="_ _/ _ _/ _ _ _ _" />
                             </div>
                             <div class="m-flex-1 mg-left-10px">
                                 <div class="m-label">Giới tính</div>
-                                <select id="gender" name="Gender" fieldName="gender" fieldValue="gender"  >
+                                <select id="gender" name="Gender" fieldName="gender" fieldValue="gender">
                                     <option value="0">Nam</option>
                                     <option value="1">Nữ</option>
                                     <option value="2">Khác</option>
@@ -181,24 +216,21 @@
                         </div>
                         <div class="m-row m-flex">
                             <div class="m-flex-1">
-                                <div class="m-label" title="Số chứng minh thư nhân dân hoặc căn cước công dân">Số CMTND/ Căn cước (<span class="label-required">*</span>)</div>
-                                <div  ><input id="txtIdentityNumber" name="IdentifyNumber" fieldName="text" type="text" required /></div>
+                                <div class="m-label" title="Số chứng minh thư nhân dân hoặc căn cước công dân">Số CMTND/
+                                    Căn cước (<span class="label-required">*</span>)</div>
+                                <div><input id="txtIdentityNumber" name="IdentifyNumber" fieldName="text" type="text"
+                                        required /></div>
                             </div>
                             <div class="m-flex-1 mg-left-10px">
-                                <m-date-picker  name="DateOfIN" 
-                                                id="dtDateOfIN"
-                                               label="Ngày cấp"
-                                               label-cls="m-label"
-                                               input-cls="m-control"
-                                               format="dd/mm/yyyy"
-                                               fieldName=""
-                                               placeholder="_ _/ _ _/ _ _ _ _" />
+                                <m-date-picker name="DateOfIN" id="dtDateOfIN" label="Ngày cấp" label-cls="m-label"
+                                    input-cls="m-control" format="dd/mm/yyyy" fieldName=""
+                                    placeholder="_ _/ _ _/ _ _ _ _" />
                             </div>
                         </div>
                         <div class="m-row m-flex">
                             <div class="m-flex-1">
                                 <div class="m-label">Nơi cấp</div>
-                                <div  ><input id="txtPlaceOfIN" name="PlaceOfIN"  type="text" /></div>
+                                <div><input id="txtPlaceOfIN" name="PlaceOfIN" type="text" /></div>
                             </div>
                             <div class="m-flex-1">
                             </div>
@@ -206,11 +238,12 @@
                         <div class="m-row m-flex">
                             <div class="m-col m-flex-1">
                                 <div class="m-label">Email (<span class="label-required">*</span>)</div>
-                                <div  ><input id="txtEmail" name="Email" fieldName="Email" type="email" required placeholder="example@domain.com" /></div>
+                                <div><input id="txtEmail" name="Email" fieldName="Email" type="email" required
+                                        placeholder="example@domain.com" /></div>
                             </div>
                             <div class="m-flex-1 mg-left-10px">
                                 <div class="m-label">Số điện thoại (<span class="label-required">*</span>)</div>
-                                <div  >
+                                <div>
                                     <input id="txtPhoneNumber" name="PhoneNumber" type="text" required />
                                 </div>
                             </div>
@@ -223,43 +256,43 @@
                         <div class="m-row m-flex">
                             <div class="m-flex-1">
                                 <div class="m-label">Vị trí</div>
-                                <select class="getPositions" id="cbnPosition" fieldName="PositionName" name="PositionName" fieldValue="CustomerGroupId"   >
+                                <select class="getPositions" id="cbnPosition" fieldName="PositionName"
+                                    name="PositionName" fieldValue="CustomerGroupId">
                                 </select>
                             </div>
                             <div class="m-flex-1 mg-left-10px">
                                 <div class="m-label">Phòng ban</div>
-                                <select class="getDepartments" id="cbnDepartment" fieldName="DepartmentName" name="DepartmentName" fieldValue="DepartmentId"   >
+                                <select class="getDepartments" id="cbnDepartment" fieldName="DepartmentName"
+                                    name="DepartmentName" fieldValue="DepartmentId">
                                 </select>
                             </div>
                         </div>
                         <div class="m-row m-flex">
                             <div class="m-flex-1">
                                 <div class="m-label">Mã số thuế cá nhân</div>
-                                <div  ><input id="txtTaxCode" fieldName="TaxCode" name="TaxCode" type="text" /></div>
+                                <div><input id="txtTaxCode" fieldName="TaxCode" name="TaxCode" type="text" /></div>
                             </div>
                             <div class="m-flex-1 mg-left-10px">
                                 <div class="m-label">Mức lương cơ bản</div>
-                                <div  ><input id="txtSalary" fieldName="Salary" name="Salary" type="text" style="text-align:right; padding-right: 56px" /><span class="currency-for-input">(VNĐ)</span></div>
+                                <div><input id="txtSalary" fieldName="Salary" name="Salary" type="text"
+                                        style="text-align:right; padding-right: 56px" /><span
+                                        class="currency-for-input">(VNĐ)</span></div>
                             </div>
                         </div>
                         <div class="m-row m-flex">
                             <div class="m-flex-1">
-                                <m-date-picker name="DateOfBeginWork"
-                                                id="dtDateOfBeginWork"
-                                               label="Ngày gia nhập"
-                                               label-cls="m-label"
-                                               input-cls="m-control"
-                                               format="dd/mm/yyyy"
-                                               fieldName=""
-                                               placeholder="_ _/ _ _/ _ _ _ _" />
+                                <m-date-picker name="DateOfBeginWork" id="dtDateOfBeginWork" label="Ngày gia nhập"
+                                    label-cls="m-label" input-cls="m-control" format="dd/mm/yyyy" fieldName=""
+                                    placeholder="_ _/ _ _/ _ _ _ _" />
                             </div>
 
                             <div class="m-flex-1 mg-left-10px">
                                 <div class="m-label">Tình trạng công việc</div>
-                                <select id="txtStatus" name="Status" fieldName="Status" fieldValue="status" api="/api/customergroups"  >
-                                    <option  value="1" selected>Đang làm việc</option>
-                                    <option  value="2">Đang thử việc</option>
-                                    <option value="0" >Đang nghỉ việc</option>
+                                <select id="txtStatus" name="Status" fieldName="Status" fieldValue="status"
+                                    api="/api/customergroups">
+                                    <option value="1" selected>Đang làm việc</option>
+                                    <option value="2">Đang thử việc</option>
+                                    <option value="0">Đang nghỉ việc</option>
                                 </select>
                             </div>
                         </div>
@@ -271,7 +304,8 @@
             </form>
             <div class="dialog-footer">
                 <button id="btnCancel" class="m-btn m-btn-default m-btn-cancel">Hủy</button>
-                <button id="btnSave" class="m-btn m-btn-default"><i class="far fa-save"></i><span class="btn-text">Lưu</span></button>
+                <button id="btnSave" class="m-btn m-btn-default"><i class="far fa-save"></i><span
+                        class="btn-text">Lưu</span></button>
             </div>
         </div>
     </div>
@@ -282,4 +316,5 @@
     <script src="../js/common/common.js"></script>
     <script src="../js/page/employee.js"></script>
 </body>
+
 </html>

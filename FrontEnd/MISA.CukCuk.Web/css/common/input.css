@@ -58,9 +58,41 @@
 
 /* checkbox */
 .checkboxIP{
-    width: 25px;
-    height: 25px;
+    display: none;
 }
+
+  /* Style the checkmark/indicator */
+
+
+
+.boxCheck .checkmark{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    content: "";
+
+}
+.boxCheck .checkmark div{
+    width: 20px;
+    height: 20px;
+    background-color: #019160;
+    content: "";
+    background-position: relative;
+}
+
+.boxCheck .checkmark div div{
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px  0;
+    margin: 4px auto;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
 
 /* Combobox */
 .m-combobox {

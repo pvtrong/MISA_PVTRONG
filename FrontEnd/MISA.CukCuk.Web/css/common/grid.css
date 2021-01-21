@@ -28,6 +28,7 @@
     border-bottom: 1px solid #bbbbbb;
     padding: 5px 16px !important;
     text-align: left;
+    height: 48px;
     white-space: nowrap;
     box-sizing: border-box;
     overflow: hidden;
