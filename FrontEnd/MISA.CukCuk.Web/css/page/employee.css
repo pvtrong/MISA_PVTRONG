@@ -4,7 +4,6 @@
 }
 
 .el-avatar-employee {
-    padding-top: 16px;
     padding-right: 16px;
 }
 
@@ -13,9 +12,10 @@
 }
 
 .el-avatar-employee .el-avatar {
+    margin-top: 20px;
     border: 1px solid #ccc;
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     border-radius: 50%;
     cursor: pointer;

@@ -24,32 +24,30 @@
     .ui-dialog .ui-dialog-titlebar-close {
         margin:unset;
         position: absolute;
-        right: 0;
-        top: 0;
-        width: 40px;
-        height: 40px;
+        right: 5px;
+        top: 5px;
+        width: 30px;
+        height: 30px;
         border-radius: 0 5px 0 0;
         border: none;
         outline: none;
         cursor: pointer;
         opacity: .7;
-        background-color: #ffffff;
+        background-color: #ccc;
         background-image: url('../../content/icon/x.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: 20px;
+        border-radius: 50%;
     }
 
-        .ui-dialog .ui-dialog-titlebar-close:hover {
-            background-color: #ccc;
-            
-        }
 
 .ui-button .ui-icon, .ui-button .ui-icon:hover{
     background-image: none;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
+    border-radius: 50%;
 }
 
 .ui-dialog .ui-dialog-content{
