@@ -61,9 +61,6 @@
     display: none;
 }
 
-  /* Style the checkmark/indicator */
-
-
 
 .boxCheck .checkmark{
     width: 20px;
@@ -78,6 +75,7 @@
     height: 20px;
     background-color: #019160;
     content: "";
+    border-radius: 4px;
     background-position: relative;
 }
 
@@ -85,7 +83,7 @@
     width: 5px;
     height: 10px;
     border: solid #fff;
-    border-width: 0 3px 3px  0;
+    border-width: 0 2px 2px  0;
     margin: 4px auto;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);

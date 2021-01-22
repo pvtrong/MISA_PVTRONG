@@ -12,7 +12,7 @@
 @import url('../../css/common/content.css');
 @import url('../../css/common/ui-custom.css');
 @import url('../../css/common/radio.css');
-
+@import url('../../lib/plugin/all.css');
 body {
     margin: 0;
     font-family: GoogleSans-Regular;

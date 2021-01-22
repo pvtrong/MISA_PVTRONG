@@ -54,6 +54,14 @@
             line-height:44px;
         }
 
+        .navbar .navbar-content .nav-item:active{
+            background-color: #019160;
+        }
+
+        .navbar .navbar-content .nav-item:focus{
+            background-color: #019160;
+        }
+
             .navbar .navbar-content .nav-item:hover {
                 background-color: #e5e5e5;
                 color: #000000;
