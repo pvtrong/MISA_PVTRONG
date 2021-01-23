@@ -31,7 +31,7 @@
 .filter-left{
     display: flex;
 }
-.filter-left select{
+.filter-left .m-combobox{
     margin-left:10px;
     margin-right: 10px;
 }

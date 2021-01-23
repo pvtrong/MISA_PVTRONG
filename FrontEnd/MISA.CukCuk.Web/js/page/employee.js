@@ -33,18 +33,18 @@ function loadPositions() {
         dataType: 'json',
         contentType: 'application/json'
     }).done(function (response) {
-        var trHtml2 = `<option value="">Tất cả vị trí</option>`;
+        var trHtml2 = `Tất cả vị trí`;
 
-        $('.getPositions').find('option').remove().end();
-        $('.getPositions.filter').append(trHtml2);
+        $('.getPositions .m-combobox-data').find('div').remove().end();
+        $('.getPositions .input').append(trHtml2);
         for (var i = 0; i < response.length; i++) {
             console.log(response[i]);
             debugger;
-            var trHtml = `
-                        <option value="${response[i].positionId}">${response[i].positionName}</option>
+            var trHtml = `<div class="m-combobox-item">
+                        <div class="checkmark2" value="${response[i].positionId}"><div></div></div><div  class="textCbx">${response[i].positionName}</div>
                         `;
 
-            $('.getPositions').append(trHtml);
+            $('.getPositions .m-combobox-data').append(trHtml);
 
 
         }
@@ -61,18 +61,19 @@ function loadDepartments() {
         dataType: 'json',
         contentType: 'application/json'
     }).done(function (response) {
-        var trHtml2 = `<option value="">Tất cả phòng ban</option>`;
+        var trHtml2 = `Tất cả phòng ban`;
         debugger;
-        $('.getDepartments').find('option').remove().end();
-        $('.getDepartments.filter').append(trHtml2);
+        $('.getDepartments .m-combobox-data').find('div').remove().end();
+        $('.getDepartments .input').append(trHtml2);
         for (var i = 0; i < response.length; i++) {
             console.log(response[i]);
             debugger;
-            var trHtml = `
-                        <option value="${response[i].departmentId}">${response[i].departmentName}</option>
+            var trHtml = 
+                        `<div class="m-combobox-item">
+                        <div class="checkmark2" value="${response[i].departmentId}"><div></div></div><div  class="textCbx">${response[i].departmentName}</div></div>
                         `;
 
-            $('.getDepartments').append(trHtml);
+            $('.getDepartments .m-combobox-data').append(trHtml);
 
 
         }

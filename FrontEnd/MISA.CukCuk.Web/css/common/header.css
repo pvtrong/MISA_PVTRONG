@@ -10,23 +10,9 @@
     .header .department-info {
         padding: 16px;
         font-size: 16px;
+        min-width: 230px;
         
     }
-
-        .header .department-info select {
-            height: 40px;
-            min-width: 20px;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 15px;
-        }
-
-            .header .department-info option{
-                cursor: pointer;
-                
-            }
 
 
             .header .account-info {

@@ -23,6 +23,7 @@
 
 .input-search {
     padding-left: 40px;
+    max-width: 300px;
 }
 
 .m-date-picker {
@@ -62,7 +63,7 @@
 }
 
 
-.boxCheck .checkmark{
+.checkmark{
     width: 20px;
     height: 20px;
     background-color: #fff;
@@ -70,7 +71,7 @@
     content: "";
 
 }
-.boxCheck .checkmark div{
+.checkmark div{
     width: 20px;
     height: 20px;
     background-color: #019160;
@@ -79,7 +80,7 @@
     background-position: relative;
 }
 
-.boxCheck .checkmark div div{
+.checkmark div div{
     width: 5px;
     height: 10px;
     border: solid #fff;
@@ -95,62 +96,100 @@
 /* Combobox */
 .m-combobox {
     position: relative;
-    display: block;
+    display: flex;
+    border-radius: 4px;
+    min-width: 50px;
+    height: 40px;
+    
+    
+border: 1px solid #BBB;
 }
 
-    .m-combobox input {
-        padding-right: 56px;
-        z-index: 1;
-    }
+.m-combobox .input {
+    width: calc(100% - 48px);
+    height: 38px;
+    outline: none;
+    margin: 0 56px 0 16px;
+    border-style: hidden;
+    line-height: 40px;
+    text-align: left;
+}
 
-    .m-combobox button {
-        position: absolute;
-        right: 0;
-        width: 40px;
-        height: 40px;
-        border: 0;
-        border-left: 1px solid #bbbbbb;
-        background-color: rgba(0, 0, 170, 0.00);
-        outline: none;
-        cursor: pointer !important;
-        z-index: 999;
-    }
+.m-combobox input::placeholder{
+    font-size: 11px;
+}
 
-    .m-combobox .m-combobox-data {
-        display: none;
-        position: absolute;
-        top: 61px;
-        background-color: #ffffff;
-        width: 100%;
-        z-index: 3;
-        border-radius: 5px;
-        padding: 5px 0 5px 0;
-        z-index: 999;
-        box-sizing: border-box;
-        -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
-        -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
-        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
-    }
+.m-combobox .comboboxBtn  {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    
+    outline: none;
+    cursor: pointer ;
 
-        .m-combobox .m-combobox-data .m-combobox-item {
-            display: flex;
-            height: 40px;
-            /*border-bottom: 1px solid #bbbbbb;*/
-            border-top: none;
-            line-height: 40px;
-            padding: 0 16px;
-        }
+    border-left: 1px solid #bbbbbb;
+    background-color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
 
-            .m-combobox .m-combobox-data .m-combobox-item:hover {
-                background-color: #E9EBEE;
-                cursor: pointer;
-            }
+.checkmark2{
+width: 40px;
+height: 40px;
+display: flex;
+}
 
-            .m-combobox .m-combobox-data .m-combobox-item:last-child {
-                border-bottom: none;
-            }
+.mCombobox__item--selected .checkmark2 div {
+width: 5px;
+height: 10px;
+border: solid #fff;
+border-width: 0 2px 2px  0;
+margin: 12px auto;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.m-combobox .m-combobox-data {
+    position: absolute;
+    top: 41px;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 3;
+    border-radius: 5px;
+    border: 1px solid #BBB;
+    border-top: 1px solid #fff;
+}
 
-        .m-combobox .m-combobox-data .mCombobox__item--selected {
-            background-color: #019160 !important;
-            color: #ffffff;
-        }
+.m-combobox.end .m-combobox-data {
+    top: -123px;
+    
+}
+
+.m-combobox .m-combobox-data .m-combobox-item {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    border-top: none;
+    line-height: 40px;
+    border-radius: 4px;
+    
+}
+
+.m-combobox .m-combobox-data .m-combobox-item .textCbx{
+    width: calc(100% - 40px)
+}
+
+.m-combobox .m-combobox-data .m-combobox-item:hover {
+    background-color: #E9EBEE;
+    cursor: pointer;
+}
+
+.m-combobox .m-combobox-data .m-combobox-item:last-child {
+}
+
+.m-combobox .m-combobox-data .mCombobox__item--selected {
+    background-color: #019160 !important;
+    color: #ffffff;
+}

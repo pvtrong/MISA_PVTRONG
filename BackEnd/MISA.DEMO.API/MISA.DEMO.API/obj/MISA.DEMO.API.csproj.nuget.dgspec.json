@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PVTRONG\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj": {}
+    "C:\\Users\\pvtrong\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj": {}
   },
   "projects": {
-    "C:\\PVTRONG\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj": {
+    "C:\\Users\\pvtrong\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PVTRONG\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj",
+        "projectUniqueName": "C:\\Users\\pvtrong\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj",
         "projectName": "MISA.DEMO.API",
-        "projectPath": "C:\\PVTRONG\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj",
+        "projectPath": "C:\\Users\\pvtrong\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj",
         "packagesPath": "C:\\Users\\pvtrong\\.nuget\\packages\\",
-        "outputPath": "C:\\PVTRONG\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\obj\\",
+        "outputPath": "C:\\Users\\pvtrong\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pvtrong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Dapper": {
               "target": "Package",
@@ -87,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

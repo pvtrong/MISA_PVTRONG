@@ -48,12 +48,41 @@
     </div>
     <div class="header">
         <div class="department-info">
-            <select>
-                <option>Nhà hàng Biển Đông</option>
-                <option>Nhà hàng Hải Dương</option>
-                <option>Nhà hàng Đội Cấn</option>
-                <option>Nhà hàng Cầu Giấy</option>
-            </select>
+            <div class="m-combobox">
+                <div class="input">Văn phòng/Chi nhánh</div>
+                <div class="comboboxBtn fas fa-caret-down">
+                    <div></div>
+                </div>
+                <div class="m-combobox-data">
+                    <div class="m-combobox-item mCombobox__item--selected">
+                        <div class="checkmark2">
+                            <div></div>
+                        </div>
+                        <div class="textCbx">Nhà hàng Biển Đông</div>
+
+                    </div>
+                    <div class="m-combobox-item">
+                        <div class="checkmark2">
+                            <div></div>
+                        </div>
+                        <div class="textCbx">Nhà hàng Hải Dương</div>
+                    </div>
+                    <div class="m-combobox-item">
+                        <div class="checkmark2">
+                            <div></div>
+                        </div>
+
+                        <div class="textCbx">Nhà hàng Đội Cấn</div>
+                    </div>
+                    <div class="m-combobox-item">
+                        <div class="checkmark2">
+                            <div></div>
+                        </div>
+
+                        <div class="textCbx">Nhà hàng Cầu Giấy</div>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <div class="account-info">
@@ -76,12 +105,26 @@
             <div class="filter-left">
                 <input id="txtSearchEmployee" class="icon-search input-search" type="text"
                     placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại" />
-                <select id="cbxDepartment" class="getDepartments filter" fieldName="CustomerGroupName"
+
+                <div class="m-combobox getDepartments filter" id="cbxDepartment" fieldName="CustomerGroupName"
                     fieldValue="CustomerGroupId" api="/api/customergroups">
-                </select>
-                <select class="getPositions filter" id="cbxPosition" fieldName="CustomerGroupName"
+                    <div class="input"></div>
+                    <div class="comboboxBtn fas fa-caret-down">
+                        <div></div>
+                    </div>
+                    <div class="m-combobox-data">
+
+                    </div>
+                </div>
+                <div class="m-combobox getPositions filter" id="cbxPosition" fieldName="CustomerGroupName"
                     fieldValue="CustomerGroupId" api="/api/customergroups">
-                </select>
+                    <div class="input"></div>
+                    <div class="comboboxBtn fas fa-caret-down">
+                        <div></div>
+                    </div>
+                    <div class="m-combobox-data">
+                    </div>
+                </div>
             </div>
             <div class="filter-right">
 
@@ -161,11 +204,32 @@
                 <div class="btn-select-page m-btn-lastpage"></div>
             </div>
             <div class="paging-record-option">
-                <select name="" id="cbxLimit">
-                    <option value="10">10 nhân viên/trang</option>
-                    <option value="20">20 nhân viên/trang</option>
-                    <option value="50">50 nhân viên/trang</option>
-                </select>
+                <div class="m-combobox end">
+                    <div class="input">10 kết quả</div>
+                    <div class="comboboxBtn fas fa-caret-down">
+                        <div></div>
+                    </div>
+                    <div class="m-combobox-data">
+                        <div class="m-combobox-item mCombobox__item--selected">
+                            <div class="checkmark2">
+                                <div></div>
+                            </div>
+                            10 kết quả
+                        </div>
+                        <div class="m-combobox-item">
+                            <div class="checkmark2">
+                                <div></div>
+                            </div>
+                            20 kết quả
+                        </div>
+                        <div class="m-combobox-item">
+                            <div class="checkmark2">
+                                <div></div>
+                            </div>
+                            50 kết quả
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -185,7 +249,7 @@
 
                     <div class=" m-col el-avatar-employee m-flex-1">
 
-                        
+
                         <div class="el-avatar"></div>
                         <div class="el-avatar-note text-align-center">
                             (Vui lòng chọn ảnh có định dạng <br><b>.jpg, .jpeg, .png, .gif. </b>)
@@ -218,7 +282,8 @@
                                 <div class="m-label">Giới tính</div>
                                 <div class="m-radio-group" id="rdGender">
                                     <div class="m-radio-item">
-                                        <input type="radio" id="rdMale" fieldname="Gender" value="" name="gender" checked="">
+                                        <input type="radio" id="rdMale" fieldname="Gender" value="" name="gender"
+                                            checked="">
                                         <label for="rdMale">Nam</label>
                                     </div>
                                     <div class="m-radio-item mg-left-10px">
@@ -287,9 +352,18 @@
                         <div class="m-flex">
                             <div class="m-flex-2">
                                 <div class="m-label">Vị trí</div>
-                                <select class="getPositions" id="cbnPosition" fieldName="PositionName"
-                                    name="PositionName" fieldValue="CustomerGroupId">
-                                </select>
+                                <div class="m-combobox getDepartments" id="cbxDepartment" fieldName="CustomerGroupName"
+                                    fieldValue="CustomerGroupId" api="/api/customergroups">
+                                    <div class="input"></div>
+                                    <div class="comboboxBtn fas fa-caret-down">
+                                        <div></div>
+                                    </div>
+                                    <div class="m-combobox-data">
+
+                                    </div>
+                                </div>
+
+
                             </div>
                             <div class="m-flex-3 mg-left-10px">
                                 <div class="m-label">Mức lương cơ bản</div>
@@ -305,9 +379,16 @@
                         <div class="m-flex">
                             <div class="m-flex-2 ">
                                 <div class="m-label">Phòng ban</div>
-                                <select class="getDepartments" id="cbnDepartment" fieldName="DepartmentName"
-                                    name="DepartmentName" fieldValue="DepartmentId">
-                                </select>
+                                <div class="m-combobox getPositions" id="cbxPosition" fieldName="CustomerGroupName"
+                                    fieldValue="CustomerGroupId" api="/api/customergroups">
+                                    <div class="input"></div>
+                                    <div class="comboboxBtn fas fa-caret-down">
+                                        <div></div>
+                                    </div>
+                                    <div class="m-combobox-data">
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="m-flex-3 mg-left-10px">
                                 <div class="m-label">Mã số thuế cá nhân</div>
@@ -321,36 +402,59 @@
                         <div class="m-flex">
                             <div class="m-flex-2 ">
                                 <m-date-picker name="DateOfBeginWork" id="dtDateOfBeginWork" label="Ngày gia nhập"
-                                label-cls="m-label" input-cls="m-control" format="dd/mm/yyyy" fieldName=""
-                                placeholder="_ _/ _ _/ _ _ _ _" />
+                                    label-cls="m-label" input-cls="m-control" format="dd/mm/yyyy" fieldName=""
+                                    placeholder="_ _/ _ _/ _ _ _ _" />
                             </div>
                             <div class="m-flex-3 mg-left-10px">
                                 <div class="m-label">Tình trạng công việc</div>
-                                <select id="txtStatus" name="Status" fieldName="Status" fieldValue="status"
-                                    api="/api/customergroups">
-                                    <option value="1" selected>Đang làm việc</option>
-                                    <option value="2">Đang thử việc</option>
-                                    <option value="0">Đang nghỉ việc</option>
-                                </select>
+                                <div class="m-combobox end" id="txtStatus" name="Status" fieldName="Status" fieldValue="status"
+                                api="/api/customergroups">
+                                    <div class="input">Tất cả tình trạng</div>
+                                    <div class="comboboxBtn fas fa-caret-down">
+                                        <div></div>
+                                    </div>
+                                    <div class="m-combobox-data">
+                                        <div class="m-combobox-item mCombobox__item--selected">
+                                            <div class="checkmark2" value="1">
+                                                <div></div>
+                                            </div>
+                                            <div class="textCbx"></div>
+                    
+                                        </div>
+                                        <div class="m-combobox-item">
+                                            <div class="checkmark2" value="2">
+                                                <div></div>
+                                            </div>
+                                            <div class="textCbx"></div>
+                                        </div>
+                                        <div class="m-combobox-item">
+                                            <div class="checkmark2" value="0">
+                                                <div></div>
+                                            </div>
+                    
+                                            <div class="textCbx"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </form>
-        <div class="dialog-footer">
-            <button id="btnCancel" class="m-btn m-btn-default m-btn-cancel">Hủy</button>
-            <button id="btnSave" class="m-btn m-btn-default">
-                <i class="far fa-save"></i>
-                <span class="btn-text">Lưu</span>
-            </button>
+            <div class="dialog-footer">
+                <button id="btnCancel" class="m-btn m-btn-default m-btn-cancel">Hủy</button>
+                <button id="btnSave" class="m-btn m-btn-default">
+                    <i class="far fa-save"></i>
+                    <span class="btn-text">Lưu</span>
+                </button>
+            </div>
         </div>
-    </div>
-    <script src="../lib/jquery-3.5.1.min.js"></script>
-    <script src="../lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-    <script src="../lib/plugin/jquery-plugin-custom.js"></script>
-    <script src="../lib/jquery.tableScroll/jquery.tablescroll.js"></script>
-    <script src="../js/common/common.js"></script>
-    <script src="../js/page/employee.js"></script>
+        <script src="../lib/jquery-3.5.1.min.js"></script>
+        <script src="../lib/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="../lib/plugin/jquery-plugin-custom.js"></script>
+        <script src="../lib/jquery.tableScroll/jquery.tablescroll.js"></script>
+        <script src="../js/common/common.js"></script>
+        <script src="../js/page/employee.js"></script>
 </body>
 
 </html>
