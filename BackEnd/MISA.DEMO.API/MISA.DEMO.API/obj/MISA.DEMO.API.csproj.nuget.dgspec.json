@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PVTRONG\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj": {}
+    "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj": {}
   },
   "projects": {
-    "C:\\PVTRONG\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj": {
+    "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PVTRONG\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj",
-        "projectName": "MISA.DEMO.API",
-        "projectPath": "C:\\PVTRONG\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj",
-        "packagesPath": "C:\\Users\\pvtrong\\.nuget\\packages\\",
-        "outputPath": "C:\\PVTRONG\\MISA_PVTRONG\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\obj\\",
+        "projectUniqueName": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj",
+        "projectName": "MISA.Common",
+        "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pvtrong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,14 +39,143 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DataLayer\\MISA.DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DataLayer\\MISA.DataLayer.csproj",
+        "projectName": "MISA.DataLayer",
+        "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DataLayer\\MISA.DataLayer.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj": {
+                "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Dapper": {
               "target": "Package",
               "version": "[2.0.78, )"
             },
-            "MySql.Data": {
+            "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
-              "version": "[8.0.22, )"
+              "version": "[2.2.5, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.3.0-beta.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj",
+        "projectName": "MISA.DEMO.API",
+        "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\MISA.DEMO.API.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DEMO.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj": {
+                "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj"
+              },
+              "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\MISA.Service.csproj": {
+                "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\MISA.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
             },
             "Swashbuckle": {
               "target": "Package",
@@ -87,7 +216,78 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\MISA.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\MISA.Service.csproj",
+        "projectName": "MISA.Service",
+        "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\MISA.Service.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj": {
+                "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj"
+              },
+              "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DataLayer\\MISA.DataLayer.csproj": {
+                "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DataLayer\\MISA.DataLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.23, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

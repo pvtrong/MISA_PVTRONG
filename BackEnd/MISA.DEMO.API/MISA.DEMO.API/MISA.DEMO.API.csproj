@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.78" />
-    <PackageReference Include="MySql.Data" Version="8.0.22" />
     <PackageReference Include="Swashbuckle" Version="5.6.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.6.3" />
@@ -15,7 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Service\" />
+    <ProjectReference Include="..\MISA.Common\MISA.Common.csproj" />
+    <ProjectReference Include="..\MISA.Service\MISA.Service.csproj" />
   </ItemGroup>
 
 

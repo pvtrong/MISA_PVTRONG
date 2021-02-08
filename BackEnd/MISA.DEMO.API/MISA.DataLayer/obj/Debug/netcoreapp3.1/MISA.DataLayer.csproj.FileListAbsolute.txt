@@ -1,0 +1,12 @@
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\bin\Debug\netcoreapp3.1\MISA.DataLayer.deps.json
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\bin\Debug\netcoreapp3.1\MISA.DataLayer.dll
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\bin\Debug\netcoreapp3.1\MISA.DataLayer.pdb
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\bin\Debug\netcoreapp3.1\MISA.Common.dll
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\bin\Debug\netcoreapp3.1\MISA.Common.pdb
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.csprojAssemblyReference.cache
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.AssemblyInfoInputs.cache
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.AssemblyInfo.cs
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.csproj.CoreCompileInputs.cache
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.csproj.CopyComplete
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.dll
+C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.pdb
