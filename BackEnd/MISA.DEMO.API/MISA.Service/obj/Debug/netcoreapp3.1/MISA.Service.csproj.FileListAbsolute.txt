@@ -12,3 +12,17 @@ C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\bin\Debug\netcoreapp3.
 C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.csproj.CopyComplete
 C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.dll
 C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.pdb
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\bin\Debug\netcoreapp3.1\MISA.Service.deps.json
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\bin\Debug\netcoreapp3.1\MISA.Service.dll
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\bin\Debug\netcoreapp3.1\MISA.Service.pdb
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\bin\Debug\netcoreapp3.1\MISA.Common.dll
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\bin\Debug\netcoreapp3.1\MISA.DataLayer.dll
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\bin\Debug\netcoreapp3.1\MISA.Common.pdb
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\bin\Debug\netcoreapp3.1\MISA.DataLayer.pdb
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.csprojAssemblyReference.cache
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.AssemblyInfoInputs.cache
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.AssemblyInfo.cs
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.csproj.CoreCompileInputs.cache
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.csproj.CopyComplete
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.dll
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.pdb

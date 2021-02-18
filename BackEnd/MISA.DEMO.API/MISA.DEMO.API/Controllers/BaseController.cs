@@ -31,9 +31,14 @@ namespace MISA.DEMO.API.Controllers
         /// <returns>Dữ liệu lấy được</returns>
         /// CreatedBy PVTRONG (8/2/2021)
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get([FromQuery] string keyword = null, [FromQuery] string positionId = null, [FromQuery] string departmentId = null, [FromQuery] string limitParam = null, [FromQuery] string offsetParam = null)
         {
             var serviceResult = _baseService.GetData();
+            if (keyword == null && positionId == null && departmentId == null && limitParam == null && offsetParam == null)
+            {
+                 serviceResult = _baseService.GetData();
+            }
+            else  serviceResult = _baseService.GetData(new { keyword = keyword, positiont = positionId, departmentt = departmentId, LimitParam = int.Parse(limitParam), OffsetParam= int.Parse(offsetParam)});
             var entities = serviceResult.Data as List<MISAEntity>;
             if (entities.Count() == 0)
                 return StatusCode(204, serviceResult.Data);
@@ -79,6 +84,24 @@ namespace MISA.DEMO.API.Controllers
             else if (serviceResult.Success == true && (int)serviceResult.Data > 0) return StatusCode(201, serviceResult.Data);
             else return StatusCode(200, serviceResult.Data);
 
+        }
+
+
+        /// <summary>
+        /// PVTRONG 31/12/2020
+        /// </summary>
+        /// <param name="employeeIds">ID của nhân viên được xóa</param>
+        /// <returns>Trả về tình trạng xóa</returns>
+        // DELETE api/<CustomersController>/5
+        [HttpDelete]
+        public IActionResult Delete([FromBody] string[] ids)
+        {
+            var serviceResult = _baseService.Delete(ids);
+            if ((int)serviceResult.Data == 0)
+            {
+                return StatusCode(204, serviceResult.Data);
+            } 
+            else return StatusCode(200, serviceResult.Data);
         }
         #endregion
     }

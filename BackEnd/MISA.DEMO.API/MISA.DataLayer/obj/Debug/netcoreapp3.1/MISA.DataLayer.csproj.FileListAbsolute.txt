@@ -10,3 +10,15 @@ C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp
 C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.csproj.CopyComplete
 C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.dll
 C:\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.pdb
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\bin\Debug\netcoreapp3.1\MISA.DataLayer.deps.json
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\bin\Debug\netcoreapp3.1\MISA.DataLayer.dll
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\bin\Debug\netcoreapp3.1\MISA.DataLayer.pdb
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\bin\Debug\netcoreapp3.1\MISA.Common.dll
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\bin\Debug\netcoreapp3.1\MISA.Common.pdb
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.csprojAssemblyReference.cache
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.AssemblyInfoInputs.cache
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.AssemblyInfo.cs
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.csproj.CoreCompileInputs.cache
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.csproj.CopyComplete
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.dll
+D:\git\MS2_31_PhamVanTrong\BackEnd\MISA.DEMO.API\MISA.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.pdb

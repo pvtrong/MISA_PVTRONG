@@ -13,7 +13,7 @@ namespace MISA.DataLayer
         /// <summary>
         ///  Khởi tạo kết nối cơ sở dữ liệu
         /// </summary>
-        protected string _connectionString = "User Id=nvmanh;Host=103.124.92.43;port=3306;password=12345678;Database=MS2_31_PVTRONG_CukCuk;Character Set=utf8";
+        protected string _connectionString = "User Id=dev;Host=47.241.69.179;port=3306;password=12345678;Database=MF710_TRONGPV_CUKCUK;Character Set=utf8";
         protected IDbConnection _dbConnection;
         #endregion
 
@@ -83,6 +83,27 @@ namespace MISA.DataLayer
             // Trả về số bản ghi được sửa
             return res;
         }
+
+        /// <summary>
+        /// Hàm xóa các đối tượng
+        /// </summary>
+        /// <param name="ids">Mảng Id của các đối tượng đó</param>
+        /// <returns>Số lượng bản ghi được xóa</returns>
+        /// CreatedBy PVTRONG (17/02/2021)
+        public int DeleteObject(string[] ids)
+        {
+            var className = typeof(MISAEntity).Name;
+            var res = 0;
+            foreach (string id in ids)
+            {
+                _dbConnection.Execute($"Proc_Delete{className}", new { EmployeeId = id.ToString() }, commandType: CommandType.StoredProcedure);
+                res++;
+            }
+                
+            // Trả về số bản ghi được sửa
+            return res;
+        }
+
         #endregion
     }
 }

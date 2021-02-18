@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj",
+      "projectUniqueName": "D:\\git\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj",
       "projectName": "MISA.Common",
-      "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj",
+      "projectPath": "D:\\git\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\obj\\",
+      "outputPath": "D:\\git\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -27,10 +27,12 @@ namespace MISA.Service
         public virtual ServiceResult GetData(object param = null)
         {
             var serviceResult = new ServiceResult();
-            serviceResult.Data = _dbContext.GetData(null, param);
+            if (param == null)
+                serviceResult.Data = _dbContext.GetData(null, param);
+            else serviceResult.Data = _dbContext.GetData("Proc_GetEmployeeByMultiParams", param);
             return serviceResult;
         }
-        
+
         /// <summary>
         /// Thêm mới dữ liệu
         /// </summary>
@@ -42,7 +44,7 @@ namespace MISA.Service
             var serviceResult = new ServiceResult();
             var error = new ErrorMsg();
             var isValid = ValidateData(entity, error);
-            
+
             // Xử lý nghiệp vụ: 
             if (isValid == true)
             {
@@ -65,7 +67,7 @@ namespace MISA.Service
             }
             return serviceResult;
 
-            
+
         }
 
         /// <summary>
@@ -74,16 +76,17 @@ namespace MISA.Service
         /// <param name="entity">Đối tượng cần validate</param>
         /// <returns>true: dữ liệu hợp lệ, false: không hợp lệ</returns>
         /// CreatedBy PVTRONG (7/2/2021)
-        protected virtual  bool ValidateData(MISAEntity entity, ErrorMsg errorMsg = null)
+        protected virtual bool ValidateData(MISAEntity entity, ErrorMsg errorMsg = null, string mode = "add")
         {
             return true;
         }
 
         public virtual ServiceResult Update(MISAEntity entity)
         {
+            var mode = "edit";
             var serviceResult = new ServiceResult();
             var error = new ErrorMsg();
-            var isValid = ValidateData(entity, error);
+            var isValid = ValidateData(entity, error, mode);
             // Xử lý nghiệp vụ: 
             if (isValid == true)
             {
@@ -107,6 +110,32 @@ namespace MISA.Service
             return serviceResult;
 
         }
+
+        public virtual ServiceResult Delete(string[] ids)
+        {
+            var serviceResult = new ServiceResult();
+            var rowAffects = _dbContext.DeleteObject(ids);
+
+            if(rowAffects > 0)
+            {
+                serviceResult.MISACode = MISACode.Success;
+                serviceResult.Msg = "Xóa thành công";
+                serviceResult.Data = rowAffects;
+                serviceResult.Success = true;
+                return serviceResult;
+            }else
+            {
+                serviceResult.MISACode = MISACode.NotValid;
+                serviceResult.Msg = "Xóa lỗi";
+                serviceResult.Data = rowAffects;
+                serviceResult.Success = false;
+                return serviceResult;
+            }
+            
+
+        }
+
         #endregion
     }
+
 }

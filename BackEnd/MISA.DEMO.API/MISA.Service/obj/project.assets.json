@@ -4785,11 +4785,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\MISA.Service.csproj",
+      "projectUniqueName": "D:\\git\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\MISA.Service.csproj",
       "projectName": "MISA.Service",
-      "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\MISA.Service.csproj",
+      "projectPath": "D:\\git\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\MISA.Service.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\obj\\",
+      "outputPath": "D:\\git\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4806,11 +4806,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj": {
-              "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj"
+            "D:\\git\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj": {
+              "projectPath": "D:\\git\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.Common\\MISA.Common.csproj"
             },
-            "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DataLayer\\MISA.DataLayer.csproj": {
-              "projectPath": "C:\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DataLayer\\MISA.DataLayer.csproj"
+            "D:\\git\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DataLayer\\MISA.DataLayer.csproj": {
+              "projectPath": "D:\\git\\MS2_31_PhamVanTrong\\BackEnd\\MISA.DEMO.API\\MISA.DataLayer\\MISA.DataLayer.csproj"
             }
           }
         }

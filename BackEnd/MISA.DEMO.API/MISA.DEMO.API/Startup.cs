@@ -52,7 +52,7 @@ namespace MISA.DEMO.API
             services.AddScoped<IDepartmentContext, DepartmentContext>();
             services.AddScoped<IPositionContext, PositionContext>();
             services.AddScoped<IEmployeeContext, EmployeeContext>();
-            services.AddScoped(typeof(IDbContext<>), typeof(DbContextV2<>));
+            services.AddScoped(typeof(IDbContext<>), typeof(DbContext<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
